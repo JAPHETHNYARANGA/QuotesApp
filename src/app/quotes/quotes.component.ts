@@ -9,12 +9,12 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
 
   quotes:Quote[] = [ 
-    {id:1, word:'Expect the unexpected and whenever possible expect everything', author:'Anonymous'},
-    {id:2, word:'Awise man once said nothing.....', author:'Anonymous'},
-    {id:3, word: 'Life is chaos, success is relative and confidence is everything', author:'Gina Laneti'},
-    {id:4, word:'I am  not superstitious but i am a little stitious.', author:'Michael Scott'}
+    new Quote(1, 'Expect the unexpected and whenever possible expect everything', 'Anonymous'),
+    new Quote(2,'Awise man once said nothing.....', 'Anonymous'),
+    new Quote(3, 'Life is chaos, success is relative and confidence is everything','Gina Laneti'),
+    new Quote(4, 'I am  not superstitious but i am a little stitious.','Michael Scott')
 
-  ]
+  ];
 
   constructor() { }
 

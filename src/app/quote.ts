@@ -1,10 +1,10 @@
 export class Quote {
     id:number;
-    quote:string;
+    word:string;
     author:string;
-    constructor(id:number, quote:string, author:string){
+    constructor(id:number, word:string, author:string){
         this.id =id;
-        this.quote = quote;
+        this.word = word;
         this.author=author;
     }
 }

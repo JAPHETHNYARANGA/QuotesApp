@@ -9,10 +9,10 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
 
   quotes:Quote[] = [ 
-    new Quote('Japheth', 'Expect the unexpected and whenever possible expect everything', 'Anonymous', 0,0),
-    new Quote('Wycliffe','Awise man once said nothing.....', 'Anonymous',0,0),
-    new Quote('Nyaranga', 'Life is chaos, success is relative and confidence is everything','Gina Laneti',0,0),
-    new Quote('Buttercup', 'I am  not superstitious but i am a little stitious.','Michael Scott', 0, 0)
+    new Quote('Japheth', 'Expect the unexpected and whenever possible expect everything', 'Anonymous', new Date(2021,8,22),0,0),
+    new Quote('Wycliffe','Awise man once said nothing.....', 'Anonymous',new Date(2021,8,21),0,0),
+    new Quote('Nyaranga', 'Life is chaos, success is relative and confidence is everything','Gina Laneti',new Date(2021,8,20),0,0),
+    new Quote('Buttercup', 'I am  not superstitious but i am a little stitious.','Michael Scott', new Date(2021,8,19),0, 0)
 
   ];
 

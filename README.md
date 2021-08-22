@@ -1,4 +1,42 @@
-# Quote
+# Quotes App
+
+
+This is a project About Quotes App that allows user to save their most favorite quotes.
+The project does not  use a database thus the newly created quotes dissappears on page reload.
+
+
+
+### Installation requirements
+To run this project as a developer you need :
+* An editor, eg Vscode, Atom, Sublime text etc .
+* Git installed in your computer.
+* Angular and nodejs installed.
+* Understanding basic git commands.
+
+## Technologies Used
+* HTML.
+* CSS.
+* Git.
+* javascript.
+* Jquery
+* Bootstrap.
+* Font-awesome.
+* Angular
+
+
+## Live site
+you can view live here : https://japhethnyaranga.github.io/QuotesApp/
+
+## contact
+to contact the developer, you can email through: nyaranga4gmail.com
+
+
+## Author
+JAPHETH WYCLIFFE NYARANGA  
+
+# lincense And Copyright
+This project is under MIT licence
+Copyright(c)2021 @JAPHETH NYARANGA
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
 

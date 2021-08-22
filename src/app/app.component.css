@@ -4,8 +4,9 @@ body, html{
 }
 .navbar1{
     color:white;
-    background-color: #808080;
+    background-color: black;
     height: 3rem;
+    width:100%;
 }
 li{
     display:inline;
@@ -18,7 +19,7 @@ li{
 }
 
 #two, #three, #four{
-    margin-left:12%;
+    margin-left:10%;
 }
 #one{
 font-weight: 800;

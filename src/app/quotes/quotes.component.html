@@ -5,7 +5,7 @@
             <div class="quotes">
                 <ul>
                     <div  *ngFor = 'let quote of quotes; let i = index' >
-                        <li> {{quote.id}}</li>
+                        <li> {{quote.name}}</li>
                         
                             <button class="btn btn-warning" (click) = 'quoteDetails(i)'>Details</button>
                             

@@ -10,8 +10,8 @@
                 </div>
                 <div class="form-group">
                     <label for="Quote">Quote</label>
-                    <input type="text" required class="form-control" rows="5" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" required/>
-                    <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+                    <input type="text" required class="form-control" rows="5" id="word" [(ngModel)]="newQuote.word" name="word" #word="ngModel" required/>
+                    <div [hidden]="word.valid || word.pristine" class="alert alert-danger">
                         <p>Please fill in a quote</p>
                         </div>
                 </div>

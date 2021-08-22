@@ -24,3 +24,22 @@ li{
 #one{
 font-weight: 800;
 }
+
+.fa-plus{
+    color:blue;
+    
+}
+
+@media only screen and (max-width:780px){
+    ul{
+        display:none;
+    }
+    .fa-plus-circle{
+        color:blue;
+    }
+}
+@media only screen and (min-width:781px){
+    .fa-plus-circle{
+        display:none;
+    }
+}

@@ -1,17 +1,35 @@
 
 <h3>New Quote</h3>
-<form id="form">
-    <div class="form-group">
-        <label for="Name">Name</label>
-        <input type="text" required class="form-control" id="quote"/>
-    </div>
-    <div class="form-group">
-        <label for="Quote">Quote</label>
-        <input type="text" required class="form-control" id="quote"/>
-    </div>
-    <div class="form-group">
-        <label for="Author">Author</label>
-        <input type="text" required class="form-control" id="quote"/>
-    </div>
-    <button type="button" class="btn btn-success">Post</button>
+<form id="form" #goalForm = 'ngForm'>
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" required class="form-control" id="quote" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required/>
+                    <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                        <p>Please fill in your name</p>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label for="Quote">Quote</label>
+                    <input type="text" required class="form-control" rows="5" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" required/>
+                    <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+                        <p>Please fill in a quote</p>
+                        </div>
+                </div>
+            
+            <div class="form-group">
+                <label for="Author">Author</label>
+                <input type="text" required class="form-control" id="quote"  [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
+                <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                <p>Please provide the quote author</p>
+                </div>
+                </div>
+            <div class="form-group">
+
+                <label for="complete">Completion</label>
+                <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
+                <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+                <p>Date is required</p>
+                </div>
+            </div>
+                <button type="button" class="btn btn-success">Post</button>
 </form>

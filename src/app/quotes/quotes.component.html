@@ -8,7 +8,7 @@
                     <div class="quotes">
                         <ul>
                             <div  *ngFor = 'let quote of quotes; let i = index' >
-                                <li> {{quote.name}}</li>
+                                <li> {{quote.id}}-{{quote.name}}</li>
                                 
                                     <button class="btn btn-warning" (click) = 'quoteDetails(i)'>Details</button>
                                     
@@ -26,7 +26,7 @@
 </div>            
 <div class="col-md-5">
 
-        <app-quote-form></app-quote-form>
+        <app-quote-form (addQuote) = "addNewQuote($event)"></app-quote-form>
 
 </div>
     </div>    

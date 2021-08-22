@@ -2,19 +2,26 @@
         <div class="col-md-6">
             <h1>Quotes</h1>
 
-            <div class="quotes">
-                <ul>
-                    <div  *ngFor = 'let quote of quotes; let i = index' >
-                        <li> {{quote.name}}</li>
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="quotes">
+                        <ul>
+                            <div  *ngFor = 'let quote of quotes; let i = index' >
+                                <li> {{quote.name}}</li>
+                                
+                                    <button class="btn btn-warning" (click) = 'quoteDetails(i)'>Details</button>
+                                    
+                                    <app-quote-details *ngIf = 'quote.showQuotes' [quote]= 'quote' (isComplete) = 'deleteQuote($event, i)'></app-quote-details>
+                                
+                            </div>
                         
-                            <button class="btn btn-warning" (click) = 'quoteDetails(i)'>Details</button>
-                            
-                            <app-quote-details *ngIf = 'quote.showQuotes' [quote]= 'quote' (isComplete) = 'deleteQuote($event, i)'></app-quote-details>
-                        
+                        </ul>
                     </div>
-                
-                </ul>
-            </div>
+                </div>
+              </div>
+
+           
             
 </div>            
 <div class="col-md-5">

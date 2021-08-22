@@ -1,12 +1,16 @@
 
-<p>{{quote.word}}</p>
-<p>~{{quote.author}}</p>
-<p>this quote has been formed for{{quote.completeDate|timePassed}} days</p>
-<button class="btn btn-danger" (click)= 'quoteDelete(true)'>Delete</button>
-<br><br>
-<button class="btn btn-sm " (click)='upvote()'>{{quote.likes}} <i class="fas fa-thumbs-up"></i></button> 
-<button class="btn btn-sm " (click)='downvote()'>{{quote.dislikes}} <i class="fas fa-thumbs-down"></i></button> 
-<br><br><br>
-<hr>
 
 
+<div class="card">
+    <div class="card-body">
+        <p>{{quote.word}}</p>
+        <p>~{{quote.author}}</p>
+        <p>this quote has been formed for{{quote.completeDate|timePassed}} days</p>
+        <button class="btn btn-danger" (click)= 'quoteDelete(true)'>Delete</button>
+        <br><br>
+        <button class="btn btn-sm " (click)='upvote()'>{{quote.likes}} <i class="fas fa-thumbs-up"></i></button> 
+        <button class="btn btn-sm " (click)='downvote()'>{{quote.dislikes}} <i class="fas fa-thumbs-down"></i></button> 
+        <br><br><br>
+        
+    </div>
+  </div>
